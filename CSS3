@@ -1,0 +1,148 @@
+.back-drop {
+  background: #FFF url("http://i.imgur.com/sByKKRm.jpg");
+  background-size: 1450px 836px;
+  height: 832px;
+  width: 832px; 
+  display: block;
+  margin: 4% auto;
+ box-shadow: 1px 12px 5px rgba(0,0,0,.4), 4px 3px 8px rgba(0,0,0,.4), 5px 10px 10px rgba(0,0,0,.2), 10px 10px 10px rgba(0,0,0,.4);
+}
+
+.outer-board {
+  height: 700px;
+  width: 700px;
+  background: #13333F;
+  box-shadow: inset -1px 1px 5px rgba(0,0,0,.2), inset 1px -1px 5px rgba(0,0,0,.2), 1px 2px 5px rgba(0,0,0,.4), 4px 3px 5px rgba(0,0,0,.4), 5px 2px 5px rgba(0,0,0,.2), -5px 2px 5px rgba(0,0,0,.4);
+  margin:auto;
+  border-radius:10px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 0;
+}
+
+.board {
+  background: url("http://i.imgur.com/ZszuGOZ.jpg");
+  width: 650px;
+  height: 650px;
+  position: relative;
+  top: 3.5%;
+  left: 3.4%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(255,255,255,1),
+    -1px -1px 5px rgba(0,0,0,1);
+   
+}
+.square {
+  background: none;
+  height: 217px;
+  width: 217px;
+  position: absolute;
+  cursor: pointer;
+  
+  font-family: permanent marker;
+  color: white;
+  font-size: 150px;
+  text-align: center;
+}
+
+.title{
+  position: relative;
+  color: #D3D9DB;
+  font-family: permanent marker;
+  font-size: 65px;
+  top: 0;
+  left: 30%;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: red
+   ;
+}
+
+
+.restart {
+  position: relative;
+  color: #D3D9DB;
+  font-family: permanent marker;
+  font-size: 40px;
+  top: -1.5%;
+  left: 32%;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+#UL {
+  top: 0;
+  left: 0;
+  border-bottom: solid white;
+  border-right: solid white;
+}
+
+#UM {
+  top: 0;
+  left: 216px;
+  border-left: solid white;
+  border-bottom: solid white;
+  border-right: solid white;
+}
+
+#UR {
+  top: 0;
+  left: 433px;
+  border-left: solid white;
+  border-bottom: solid white;
+}
+
+#ML {
+  top: 217px;
+  left: 0;
+  border-top: solid white;
+  border-bottom: solid white;
+  border-right: solid white;
+}
+
+#MM {
+  top: 217px;
+  left: 217px;
+  border: solid white;
+}
+
+#MR {
+  top: 217px;
+  left: 433px;
+  border-top: solid white;
+  border-left: solid white;
+  border-bottom: solid white;
+}
+
+#LL {
+  top: 433px;
+  left: 0;
+  border-top: solid white;
+  border-right: solid white;
+}
+
+#LM {
+  top: 433px;
+  left: 217px;
+  border-left: solid white;
+  border-top: solid white;
+  border-right: solid white;
+}
+
+#LR {
+  top: 433px;
+  left: 433px;
+  border-top: solid white;
+  border-left: solid white;
+}
+
+#footer {
+font-family:Raleway, sans-serif;
+font-size:20px;
+font-weight:100;
+color: red;
+text-align: center;
+margin: auto;
+display: block;  
+  margin-top: 50px;
+}
