@@ -1,4 +1,4 @@
-//---Storage & variable declarations--->
+//---Storage & variable declaraCIÓN--->
 var player_symbol, comp_symbol, current_symbol, player_moves, comp_moves,open_spaces,human_turn, game_started,winning_combo, winning_move, last_move, one_player, next_move;
 
 var wins = [
@@ -37,12 +37,12 @@ var edges = [
   2,4,6,8
 ]
 
-//---Initial Conditions-->
+//---Condiciones iniciales-->
 game_started = false;
 last_move = 0;
 one_player = true;
 
-//---Initialize Input Squares--->
+//---Inicializar cuadrados de entrada--->
 function Square(id, code, type) {
   this.name = id.substr(1);
   this.id = $(id);
@@ -150,7 +150,7 @@ $('.restart').click(function() {
   Reset();
 });
 
-//---Start the Game--->
+//---Comienza el juego--->
 function gameStart() {
   ML.Clear();
   MM.Clear();
@@ -188,7 +188,7 @@ if (possibleMove(comp_moves, winPresent)) {
   next_move.Mark();
 }  
   
-//play an edge if player has two corners
+//Jugar un borde si el jugador tiene dos esquinas
 else if (secondMove()) {
     anyEdge();
 }   
@@ -245,7 +245,7 @@ else if (last_move != 0) {
 }  
   
   /*
-//computer goes first  
+// La computadora va primero
 
 else if (player_moves.length == 1 && (eval(last_move).type == "corner" || eval(last_move).type == "edge")) {
   eval(pickAny(squareHasValue("type", "center"))).Mark();
@@ -265,8 +265,7 @@ else {
   
 };
 
-//---Check if there is a win available given a move set and the remaining spaces--->
-function possibleMove(moves_array, func) {
+//---Compruebe si hay un triunfo disponible dado un conjunto de movimientos y los espacios restantes(moves_array, func) {
   //for each remaining open space
   for (var i = 0; i < open_spaces.length; i++) {
     //create a copy
@@ -285,7 +284,7 @@ function possibleMove(moves_array, func) {
 }
 
 
-//---Checks if there is a winning combination in a given move set--->
+//---Comprueba si hay una combinación ganadora en un conjunto de movimientos dado--->
 function winPresent(moves_array) {
   //for each array of winning combinations
   for (var i = 0; i < wins.length; i++) {
@@ -306,8 +305,8 @@ function winPresent(moves_array) {
   return false;
 }
 
-//---Checks if there is a forking combination in a given move set--->
-function forkPresent(moves_array) {
+//---85/5000
+Comprueba si hay una combinación de bifurcación en un conjunto de movimiento dado (moves_array) {
   //for each array of fork combinations
   for (var i = 0; i < forks.length; i++) {
     
@@ -341,7 +340,7 @@ function forkPresent(moves_array) {
 open_spaces = [2,6,7];
 console.log(possibleMove([1,5], forkPresent));
 
-//---Remove current move code from remaining spaces array--->
+//---Eliminar el código de movimiento actual del conjunto de espacios restantes--->
 function remove(code) {
   for (var i = 0; i < open_spaces.length; i++) {
     if (code == open_spaces[i]) {
@@ -349,7 +348,7 @@ function remove(code) {
     }
   }
 }
-//---Checks if the current move code is still in remaing spaces array--->
+//---Comprueba si el código de movimiento actual está todavía en la matriz de espacios restantes--->
 function inArray(array, el) {
   for ( var i = array.length; i--; ) {
     if ( array[i] === el ) return true;
@@ -357,11 +356,11 @@ function inArray(array, el) {
   return false;
 }
 
-//---Checks for a key/value pair within an object--->
+//---Comprueba si hay un par clave / valor dentro de un objeto--->
 function objectHasValue(obj, key, value) {
     return obj.hasOwnProperty(key) && obj[key] === value;
 }
-//---Checks if any of the squares have a given key/value pair, and returns an array of all the names of the squares that do--->
+//---Comprueba si alguno de los cuadrados tiene un par clave / valor dado, y devuelve una matriz de todos los nombres de los cuadrados que lo hacen--->
 function squareHasValue(key,value) {
   var results = [];
   for (var i = 0; i < square_list.length; i++) {
